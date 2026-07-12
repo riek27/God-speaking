@@ -139,12 +139,9 @@
       box-shadow: 0 30px 40px -15px rgba(11, 29, 46, 0.2), 0 15px 20px -10px rgba(11, 29, 46, 0.12);
     }
 
+    /* Removed page-section hide/show — all sections visible */
     .page-section {
-      display: none;
-      animation: fadeIn 0.5s ease-out;
-    }
-    .page-section.active {
-      display: block;
+      /* No display:none */
     }
 
     .nav-link {
@@ -353,18 +350,18 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center space-x-0">
-          <a href="#" onclick="showPage('home', this)" class="nav-link active px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Home</a>
-          <a href="#" onclick="showPage('about', this)" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">About Us</a>
-          <a href="#" onclick="showPage('programs', this)" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Programs</a>
-          <a href="#" onclick="showPage('projects', this)" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Projects</a>
-          <a href="#" onclick="showPage('news', this)" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">News</a>
-          <a href="#" onclick="showPage('involved', this)" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Get Involved</a>
-          <a href="#" onclick="showPage('contact', this)" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Contact</a>
+          <a href="#home" class="nav-link active px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Home</a>
+          <a href="#about" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">About Us</a>
+          <a href="#programs" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Programs</a>
+          <a href="#projects" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Projects</a>
+          <a href="#news" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">News</a>
+          <a href="#involved" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Get Involved</a>
+          <a href="#contact" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Contact</a>
         </nav>
 
         <!-- CTA Button -->
         <div class="hidden lg:block">
-          <a href="#" onclick="showPage('involved', this)" class="btn-gold font-heading font-semibold px-6 py-3 rounded-full text-sm shadow-lg inline-block">
+          <a href="#involved" class="btn-gold font-heading font-semibold px-6 py-3 rounded-full text-sm shadow-lg inline-block">
             Donate Now
           </a>
         </div>
@@ -390,16 +387,16 @@
         </button>
       </div>
       <nav class="flex flex-col space-y-1 p-4 flex-1 overflow-y-auto">
-        <a href="#" onclick="showPage('home', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🏠 Home</a>
-        <a href="#" onclick="showPage('about', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📖 About Us</a>
-        <a href="#" onclick="showPage('programs', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🌱 Programs</a>
-        <a href="#" onclick="showPage('projects', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🎯 Projects</a>
-        <a href="#" onclick="showPage('news', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📰 News</a>
-        <a href="#" onclick="showPage('involved', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🤝 Get Involved</a>
-        <a href="#" onclick="showPage('contact', this); closeMobileMenu();" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">✉️ Contact</a>
+        <a href="#home" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🏠 Home</a>
+        <a href="#about" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📖 About Us</a>
+        <a href="#programs" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🌱 Programs</a>
+        <a href="#projects" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🎯 Projects</a>
+        <a href="#news" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📰 News</a>
+        <a href="#involved" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🤝 Get Involved</a>
+        <a href="#contact" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">✉️ Contact</a>
       </nav>
       <div class="p-4 border-t border-soft-warm">
-        <a href="#" onclick="showPage('involved', this); closeMobileMenu();" class="btn-gold block w-full text-center px-6 py-3 rounded-full font-heading font-semibold shadow-lg">
+        <a href="#involved" onclick="closeMobileMenu()" class="btn-gold block w-full text-center px-6 py-3 rounded-full font-heading font-semibold shadow-lg">
           Donate Now
         </a>
       </div>
@@ -410,7 +407,7 @@
   <main class="pt-16 lg:pt-20">
 
     <!-- ==================== HOME PAGE ==================== -->
-    <section id="home" class="page-section active">
+    <section id="home" class="page-section">
       <!-- Hero Section -->
       <div class="hero-bg min-h-screen flex items-center justify-center text-center px-4 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-deep-navy/10 via-transparent to-deep-navy/20 pointer-events-none"></div>
@@ -426,10 +423,10 @@
             GSM-CDA is a Christian faith-based organization dedicated to sustainable development, environmental protection, and compassionate service across South Sudan—guided by hope, integrity, and stewardship.
           </p>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#" onclick="showPage('involved', this)" class="btn-gold px-8 py-4 rounded-full font-heading font-semibold text-lg shadow-2xl transform hover:-translate-y-1 transition-all inline-block">
+            <a href="#involved" class="btn-gold px-8 py-4 rounded-full font-heading font-semibold text-lg shadow-2xl transform hover:-translate-y-1 transition-all inline-block">
               Join Our Mission
             </a>
-            <a href="#" onclick="showPage('programs', this)" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/15 transition-all duration-300 inline-block text-lg hover:border-white">
+            <a href="#programs" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/15 transition-all duration-300 inline-block text-lg hover:border-white">
               Explore Programs
             </a>
           </div>
@@ -560,9 +557,9 @@
           <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6">Join Us in Building a Hope-Filled Future</h2>
           <p class="text-lg opacity-95 mb-10 max-w-2xl mx-auto leading-relaxed">Whether you volunteer, partner, or give, your support fuels transformative change for communities and creation across South Sudan.</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
-            <a href="#" onclick="showPage('involved', this)" class="bg-white text-deep-navy font-heading font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 inline-block">Volunteer With Us</a>
-            <a href="#" onclick="showPage('involved', this)" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Partner With Us</a>
-            <a href="#" onclick="showPage('involved', this)" class="btn-gold px-8 py-4 rounded-full font-heading font-semibold shadow-2xl inline-block">Donate Today</a>
+            <a href="#involved" class="bg-white text-deep-navy font-heading font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 inline-block">Volunteer With Us</a>
+            <a href="#involved" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Partner With Us</a>
+            <a href="#involved" class="btn-gold px-8 py-4 rounded-full font-heading font-semibold shadow-2xl inline-block">Donate Today</a>
           </div>
         </div>
       </section>
@@ -664,7 +661,7 @@
           </div>
         </div>
         <div class="text-center fade-in-element">
-          <a href="#" onclick="showPage('involved', this)" class="btn-gold inline-flex items-center px-8 py-4 rounded-full font-heading font-semibold shadow-xl">Support Our Programs <i class="fas fa-arrow-right ml-3"></i></a>
+          <a href="#involved" class="btn-gold inline-flex items-center px-8 py-4 rounded-full font-heading font-semibold shadow-xl">Support Our Programs <i class="fas fa-arrow-right ml-3"></i></a>
         </div>
       </div>
     </section>
@@ -889,11 +886,11 @@
         <div>
           <h4 class="font-heading font-bold text-lg mb-4 text-gold-accent">Quick Links</h4>
           <ul class="space-y-2 opacity-90">
-            <li><a href="#" onclick="showPage('about', this)" class="hover:text-gold-accent transition-colors">About Us</a></li>
-            <li><a href="#" onclick="showPage('programs', this)" class="hover:text-gold-accent transition-colors">Programs</a></li>
-            <li><a href="#" onclick="showPage('projects', this)" class="hover:text-gold-accent transition-colors">Projects</a></li>
-            <li><a href="#" onclick="showPage('news', this)" class="hover:text-gold-accent transition-colors">News</a></li>
-            <li><a href="#" onclick="showPage('involved', this)" class="hover:text-gold-accent transition-colors">Get Involved</a></li>
+            <li><a href="#about" class="hover:text-gold-accent transition-colors">About Us</a></li>
+            <li><a href="#programs" class="hover:text-gold-accent transition-colors">Programs</a></li>
+            <li><a href="#projects" class="hover:text-gold-accent transition-colors">Projects</a></li>
+            <li><a href="#news" class="hover:text-gold-accent transition-colors">News</a></li>
+            <li><a href="#involved" class="hover:text-gold-accent transition-colors">Get Involved</a></li>
           </ul>
         </div>
         <div>
@@ -917,24 +914,7 @@
 
   <!-- JavaScript -->
   <script>
-    function showPage(pageId, clickedElement) {
-      document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
-      const target = document.getElementById(pageId);
-      if (target) target.classList.add('active');
-      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-      if (clickedElement && clickedElement.classList.contains('nav-link')) {
-        clickedElement.classList.add('active');
-      } else if (clickedElement) {
-        const parentLink = clickedElement.closest('.nav-link');
-        if (parentLink) parentLink.classList.add('active');
-      }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      closeMobileMenu();
-      setTimeout(() => {
-        document.querySelectorAll('#' + pageId + ' .fade-in-element').forEach(el => el.classList.add('visible'));
-      }, 150);
-    }
-
+    // Mobile menu functionality
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileOverlay = document.getElementById('mobile-overlay');
     document.getElementById('mobile-menu-btn').addEventListener('click', () => {
@@ -947,12 +927,37 @@
       mobileMenu.classList.remove('open');
       mobileOverlay.classList.remove('active');
     }
+    // Close menu when a link is clicked (the onclick in HTML calls closeMobileMenu)
     document.querySelectorAll('#mobile-menu a').forEach(link => {
       link.addEventListener('click', function() {
         setTimeout(closeMobileMenu, 200);
       });
     });
 
+    // Scroll spy for active nav link
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    function activateNavOnScroll() {
+      let current = 'home';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100; // offset for fixed header
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', activateNavOnScroll);
+    // Set initial active state
+    activateNavOnScroll();
+
+    // Fade-in animation observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -964,6 +969,7 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.fade-in-element').forEach(el => observer.observe(el));
+      // Make home elements visible immediately
       setTimeout(() => {
         document.querySelectorAll('#home .fade-in-element').forEach(el => el.classList.add('visible'));
       }, 400);
@@ -971,3 +977,8 @@
   </script>
 </body>
 </html>
+
+
+
+
+
