@@ -302,6 +302,65 @@
       background: #A67C2E;
     }
 
+    /* Logo container – replaces the old gradient box */
+.logo-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .logo-container {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile menu logo container */
+.logo-container-mobile {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.logo-image-mobile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+    /* Strategic Objectives Grid */
+.objective-card {
+  transition: all 0.3s ease;
+  border-left: 4px solid #C6973A;
+}
+.objective-card:hover {
+  border-left-color: #1A6B5A;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -10px rgba(11, 29, 46, 0.15);
+}
+.objective-number {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #C6973A;
+  opacity: 0.8;
+}
+
     @media (max-width: 768px) {
       .hero-bg {
         background-attachment: scroll;
@@ -338,14 +397,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center py-3 lg:py-4">
         <div class="flex items-center space-x-3">
-          <div class="w-11 h-11 lg:w-12 lg:h-12 bg-gradient-to-br from-deep-navy to-teal-rich rounded-xl flex items-center justify-center shadow-md">
-            <i class="fas fa-dove text-white text-lg lg:text-xl"></i>
-          </div>
-          <div>
-            <h1 class="font-heading font-bold text-lg lg:text-xl text-deep-navy leading-tight tracking-tight">GSM-CDA</h1>
-            <p class="text-[10px] lg:text-xs text-gold-accent font-medium tracking-wider uppercase">Serving Humanity • Restoring Hope</p>
-          </div>
-        </div>
+  <div class="logo-container">
+    <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image">
+  </div>
+  <div>
+    <h1 class="font-heading font-bold text-lg lg:text-xl text-deep-navy leading-tight tracking-tight">GSM-CDA</h1>
+    <p class="text-[10px] lg:text-xs text-gold-accent font-medium tracking-wider uppercase">Serving Humanity • Restoring Hope</p>
+  </div>
+</div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center space-x-0">
@@ -376,11 +435,11 @@
     <div id="mobile-menu" class="mobile-menu fixed inset-y-0 left-0 w-72 bg-white shadow-2xl z-50 flex flex-col">
       <div class="flex justify-between items-center p-5 border-b border-soft-warm">
         <div class="flex items-center space-x-2">
-          <div class="w-10 h-10 bg-gradient-to-br from-deep-navy to-teal-rich rounded-lg flex items-center justify-center">
-            <i class="fas fa-dove text-white"></i>
-          </div>
-          <span class="font-heading font-bold text-lg text-deep-navy">GSM-CDA</span>
-        </div>
+  <div class="logo-container-mobile">
+    <img src="assets/logo.png" alt="GSM-CDA Logo" class="logo-image-mobile">
+  </div>
+  <span class="font-heading font-bold text-lg text-deep-navy">GSM-CDA</span>
+</div>
         <button id="close-mobile-menu" class="text-text-dark hover:text-gold-accent transition-colors p-1" aria-label="Close menu">
           <i class="fas fa-times text-xl"></i>
         </button>
@@ -787,81 +846,246 @@
     </section>
 
     <!-- ==================== PROGRAMS PAGE ==================== -->
-    <section id="programs" class="page-section">
-      <div class="page-banner py-28 lg:py-36 text-center text-white px-4">
-        <div class="max-w-3xl mx-auto fade-in-element">
-          <span class="inline-block px-4 py-1.5 bg-white/15 backdrop-blur-sm rounded-full text-sm font-medium mb-5 tracking-wide uppercase">Our Work</span>
-          <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 hero-text-shadow">Programs for Holistic Transformation</h1>
-          <p class="text-lg opacity-95 hero-text-shadow">Integrated initiatives addressing environmental, social, economic, and development dimensions of community well-being across South Sudan.</p>
+<section id="programs" class="page-section">
+  <div class="page-banner py-28 lg:py-36 text-center text-white px-4">
+    <div class="max-w-3xl mx-auto fade-in-element">
+      <span class="inline-block px-4 py-1.5 bg-white/15 backdrop-blur-sm rounded-full text-sm font-medium mb-5 tracking-wide uppercase">Our Work</span>
+      <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 hero-text-shadow">Programs for Holistic Transformation</h1>
+      <p class="text-lg opacity-95 hero-text-shadow">Integrated initiatives addressing environmental, social, economic, and development dimensions of community well-being across South Sudan.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 bg-soft-warm">
+    
+    <!-- Existing program highlights -->
+    <div class="grid md:grid-cols-2 gap-8 mb-20">
+      <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
+        <div class="flex items-start mb-4">
+          <div class="w-14 h-14 bg-sky-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-leaf text-teal-rich text-2xl"></i></div>
+          <div>
+            <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Environmental Protection & Climate Resilience</h3>
+            <p class="text-text-medium mb-4">Addressing environmental degradation from industrial activities, promoting sustainable land use, and building community capacity for climate adaptation. This includes responsible natural resource management, climate change adaptation, environmental restoration, pollution prevention, and biodiversity conservation.</p>
+            <ul class="space-y-2 mb-6 text-sm text-text-medium">
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Community pollution monitoring in oil-affected areas</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Climate-smart agriculture training</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Reforestation and ecosystem restoration</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Water resource protection</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Renewable energy solutions</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 bg-soft-warm">
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
-          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
-            <div class="flex items-start mb-4">
-              <div class="w-14 h-14 bg-sky-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-leaf text-teal-rich text-2xl"></i></div>
-              <div>
-                <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Environmental Protection & Climate Resilience</h3>
-                <p class="text-text-medium mb-4">Addressing environmental degradation from industrial activities, promoting sustainable land use, and building community capacity for climate adaptation. This includes responsible natural resource management, climate change adaptation, environmental restoration, pollution prevention, and biodiversity conservation.</p>
-                <ul class="space-y-2 mb-6 text-sm text-text-medium">
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Community pollution monitoring in oil-affected areas</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Climate-smart agriculture training</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Reforestation and ecosystem restoration</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Water resource protection</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Renewable energy solutions</li>
-                </ul>
-              </div>
-            </div>
+      <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
+        <div class="flex items-start mb-4">
+          <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-hand-holding-medical text-gold-accent text-2xl"></i></div>
+          <div>
+            <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Public Health Advocacy & WASH</h3>
+            <p class="text-text-medium mb-4">Promoting clean water, sanitation, hygiene, disease prevention, and health education—especially in communities affected by environmental contamination from oil exploration and production activities.</p>
+            <ul class="space-y-2 mb-6 text-sm text-text-medium">
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>WASH programs in vulnerable communities</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Health education in churches and schools</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Maternal and child health support</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Disease prevention and outbreak response</li>
+            </ul>
           </div>
-          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
-            <div class="flex items-start mb-4">
-              <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-hand-holding-medical text-gold-accent text-2xl"></i></div>
-              <div>
-                <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Public Health Advocacy & WASH</h3>
-                <p class="text-text-medium mb-4">Promoting clean water, sanitation, hygiene, disease prevention, and health education—especially in communities affected by environmental contamination from oil exploration and production activities.</p>
-                <ul class="space-y-2 mb-6 text-sm text-text-medium">
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>WASH programs in vulnerable communities</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Health education in churches and schools</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Maternal and child health support</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Disease prevention and outbreak response</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
-            <div class="flex items-start mb-4">
-              <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-dove text-teal-rich text-2xl"></i></div>
-              <div>
-                <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Peacebuilding & Social Cohesion</h3>
-                <p class="text-text-medium mb-4">Contributing to peaceful and inclusive societies through dialogue, reconciliation, and community-led peace initiatives that address root causes of conflict and promote social cohesion.</p>
-                <ul class="space-y-2 mb-6 text-sm text-text-medium">
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Inter-community peace dialogues</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Youth peacebuilding workshops</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Faith-based reconciliation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
-            <div class="flex items-start mb-4">
-              <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-graduation-cap text-purple-600 text-2xl"></i></div>
-              <div>
-                <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Education & Capacity Development</h3>
-                <p class="text-text-medium mb-4">Empowering communities through education, skills training, and institutional strengthening to build self-reliance and sustainable development capacity.</p>
-                <ul class="space-y-2 mb-6 text-sm text-text-medium">
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Youth STEM and environmental education</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Vocational skills training</li>
-                  <li><i class="fas fa-check text-teal-rich mr-2"></i>Community awareness campaigns</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center fade-in-element">
-          <a href="#involved" class="btn-gold inline-flex items-center px-8 py-4 rounded-full font-heading font-semibold shadow-xl">Support Our Programs <i class="fas fa-arrow-right ml-3"></i></a>
         </div>
       </div>
-    </section>
+      <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
+        <div class="flex items-start mb-4">
+          <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-dove text-teal-rich text-2xl"></i></div>
+          <div>
+            <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Peacebuilding & Social Cohesion</h3>
+            <p class="text-text-medium mb-4">Contributing to peaceful and inclusive societies through dialogue, reconciliation, and community-led peace initiatives that address root causes of conflict and promote social cohesion.</p>
+            <ul class="space-y-2 mb-6 text-sm text-text-medium">
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Inter-community peace dialogues</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Youth peacebuilding workshops</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Faith-based reconciliation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element program-card">
+        <div class="flex items-start mb-4">
+          <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"><i class="fas fa-graduation-cap text-purple-600 text-2xl"></i></div>
+          <div>
+            <h3 class="font-heading font-bold text-2xl text-deep-navy mb-2">Education & Capacity Development</h3>
+            <p class="text-text-medium mb-4">Empowering communities through education, skills training, and institutional strengthening to build self-reliance and sustainable development capacity.</p>
+            <ul class="space-y-2 mb-6 text-sm text-text-medium">
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Youth STEM and environmental education</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Vocational skills training</li>
+              <li><i class="fas fa-check text-teal-rich mr-2"></i>Community awareness campaigns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strategic Objectives Section -->
+    <div class="text-center mb-16 fade-in-element">
+      <span class="inline-block px-4 py-1.5 bg-white text-gold-accent font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Our Strategic Focus</span>
+      <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-deep-navy mb-4">Strategic Objectives</h2>
+      <p class="text-text-medium max-w-2xl mx-auto">GSM-CDA pursues fifteen integrated strategic objectives to deliver lasting change for communities across South Sudan.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Objective 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">01</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Emergency Humanitarian Assistance</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Provide timely, effective, and accountable humanitarian assistance during emergencies, disasters, conflicts, disease outbreaks, and displacement.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">02</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Food Security & Livelihoods</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Strengthen food security, nutrition, agricultural productivity, fisheries, livestock development, and sustainable livelihoods.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">03</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Quality Education & Skills</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Improve access to quality education, vocational training, literacy, and life skills for children, youth, and adults.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">04</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Health & Nutrition</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Enhance access to quality healthcare services, nutrition programmes, reproductive health, disease prevention, mental health support, and community health systems.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">05</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">WASH Services</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Increase access to safe drinking water, sanitation facilities, hygiene promotion, and integrated WASH services.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 6 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">06</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Environmental Conservation</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Promote environmental conservation, climate change adaptation, ecosystem restoration, pollution prevention, sustainable land management, biodiversity conservation, and community environmental awareness.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 7 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">07</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Disaster Risk Reduction</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Strengthen disaster risk reduction, early warning systems, emergency preparedness, and community resilience.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 8 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">08</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Peaceful Coexistence</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Promote peaceful coexistence, reconciliation, conflict prevention, mediation, and social cohesion among communities.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 9 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">09</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Human Rights & Justice</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Protect and promote human rights, child rights, women's rights, disability inclusion, and access to justice.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 10 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">10</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Gender Equality & Youth</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Strengthen gender equality, women's leadership, youth empowerment, and economic inclusion.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 11 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">11</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Protection from Violence</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Prevent sexual exploitation and abuse (PSEA), sexual and gender-based violence (SGBV), child abuse, trafficking, and all forms of violence against vulnerable populations.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 12 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">12</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Institutional Strengthening</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Strengthen institutional capacity, governance, leadership, financial accountability, digital systems, and organizational sustainability.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 13 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">13</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Economic Development</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Promote community-based economic development through entrepreneurship, financial inclusion, savings groups, cooperatives, and market systems.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 14 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">14</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Infrastructure & Clean Energy</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Support infrastructure rehabilitation, renewable energy initiatives, climate-smart technologies, and resilient community assets.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Objective 15 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md objective-card fade-in-element">
+        <div class="flex items-start space-x-4">
+          <span class="objective-number">15</span>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Partnerships & Innovation</h3>
+            <p class="text-text-medium text-sm leading-relaxed">Strengthen partnerships, advocacy, research, innovation, evidence generation, and knowledge management to improve humanitarian and development outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="text-center mt-16 fade-in-element">
+      <a href="#involved" class="btn-gold inline-flex items-center px-8 py-4 rounded-full font-heading font-semibold shadow-xl">Support Our Programs <i class="fas fa-arrow-right ml-3"></i></a>
+    </div>
+  </div>
+</section>
 
     <!-- ==================== PROJECTS PAGE ==================== -->
     <section id="projects" class="page-section">
