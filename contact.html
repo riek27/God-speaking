@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact GSM-CDA – reach out for partnerships, volunteering, donations, or general inquiries. Headquartered in Juba, South Sudan." />
+  <meta name="keywords" content="GSM-CDA, contact, South Sudan, Juba, phone, email, WhatsApp, NGO, humanitarian" />
+  <meta name="author" content="GSM-CDA" />
+  <meta property="og:title" content="Contact | GSM-CDA" />
+  <meta property="og:description" content="We'd love to hear from you. Reach out for partnerships, volunteering, donations, or media inquiries." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gsmcda-ss.org/contact" />
+  <title>Contact Us | GSM-CDA</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-navy': '#0B1D2E',
+            'navy': '#123E5E',
+            'teal-rich': '#1A6B5A',
+            'gold-accent': '#C6973A',
+            'gold-light': '#D4AF6C',
+            'cream-warm': '#FBF9F4',
+            'soft-warm': '#F0EDE6',
+            'text-dark': '#1C1C1C',
+            'text-medium': '#4A4A4A',
+            'burnt-sienna': '#C67B5C',
+            'sage-muted': '#8B9D83',
+            'charcoal-rich': '#1E1E24',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            accent: ['Lora', 'Georgia', 'serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.7s ease-out forwards',
+            'slide-up': 'slideUp 0.8s ease-out forwards',
+            'slide-in-right': 'slideInRight 0.5s ease-out forwards',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: 0 }, '100%': { opacity: 1 } },
+            slideUp: { '0%': { opacity: 0, transform: 'translateY(40px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+            slideInRight: { '0%': { opacity: 0, transform: 'translateX(40px)' }, '100%': { opacity: 1, transform: 'translateX(0)' } },
+            float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-15px)' } },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- Mobile Overlay -->
+  <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/60 z-40 md:hidden" onclick="closeMobileMenu()"></div>
+
+  <!-- Floating Action Buttons -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+    <a href="https://wa.me/211917736258" target="_blank" rel="noopener noreferrer" class="floating-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="WhatsApp Support" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:+211927855574" class="bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Call Support" title="Call Us">
+      <i class="fas fa-phone-alt text-lg"></i>
+    </a>
+    <a href="mailto:gsmcdaagency@gmail.com" class="bg-deep-navy hover:bg-navy text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Email Us" title="Send Email">
+      <i class="fas fa-envelope text-lg"></i>
+    </a>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="fixed w-full z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-soft-warm/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-3 lg:py-4">
+        <div class="flex items-center space-x-3">
+          <div class="logo-container">
+            <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image">
+          </div>
+          <div>
+            <h1 class="font-heading font-bold text-lg lg:text-xl text-deep-navy leading-tight tracking-tight">GSM-CDA</h1>
+            <p class="text-[10px] lg:text-xs text-gold-accent font-medium tracking-wider uppercase">Serving Humanity • Restoring Hope</p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-0">
+          <a href="index.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Home</a>
+          <a href="about.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">About Us</a>
+          <a href="programs.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Programs</a>
+          <a href="projects.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Projects</a>
+          <a href="news.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">News</a>
+          <a href="get-involved.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Get Involved</a>
+          <a href="contact.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden lg:block">
+          <a href="get-involved.html" class="btn-gold font-heading font-semibold px-6 py-3 rounded-full text-sm shadow-lg inline-block">
+            Donate Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-deep-navy p-2 focus:outline-none hover:text-gold-accent transition-colors" aria-label="Open menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-y-0 left-0 w-72 bg-white shadow-2xl z-50 flex flex-col">
+      <div class="flex justify-between items-center p-5 border-b border-soft-warm">
+        <div class="flex items-center space-x-2">
+          <div class="logo-container-mobile">
+            <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image-mobile">
+          </div>
+          <span class="font-heading font-bold text-lg text-deep-navy">GSM-CDA</span>
+        </div>
+        <button id="close-mobile-menu" class="text-text-dark hover:text-gold-accent transition-colors p-1" aria-label="Close menu">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-1 p-4 flex-1 overflow-y-auto">
+        <a href="index.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🏠 Home</a>
+        <a href="about.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📖 About Us</a>
+        <a href="programs.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🌱 Programs</a>
+        <a href="projects.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🎯 Projects</a>
+        <a href="news.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📰 News</a>
+        <a href="get-involved.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🤝 Get Involved</a>
+        <a href="contact.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">✉️ Contact</a>
+      </nav>
+      <div class="p-4 border-t border-soft-warm">
+        <a href="get-involved.html" onclick="closeMobileMenu()" class="btn-gold block w-full text-center px-6 py-3 rounded-full font-heading font-semibold shadow-lg">
+          Donate Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-16 lg:pt-20">
+
+    <!-- 1. Hero Section -->
+    <section class="page-banner py-28 lg:py-36 text-center text-white px-4">
+      <div class="max-w-3xl mx-auto fade-in-element">
+        <span class="inline-block px-4 py-1.5 bg-white/15 backdrop-blur-sm rounded-full text-sm font-medium mb-5 tracking-wide uppercase">Get in Touch</span>
+        <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 hero-text-shadow">Contact Us</h1>
+        <p class="text-lg opacity-95 hero-text-shadow">
+          We'd love to hear from you. Whether you're interested in partnerships, volunteering, donations, media inquiries, or learning more about our work, our team is here to help.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Contact Information -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in-element">
+          <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Reach Out</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Contact Information</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <!-- Headquarters -->
+          <div class="bg-soft-warm p-6 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-14 h-14 bg-gradient-to-br from-deep-navy to-navy rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-map-marker-alt text-white text-xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Headquarters</h3>
+            <p class="text-text-medium text-sm">Juba, Central Equatoria<br>Republic of South Sudan</p>
+          </div>
+          <!-- Phone -->
+          <div class="bg-soft-warm p-6 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-14 h-14 bg-gradient-to-br from-gold-accent to-gold-light rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-phone-alt text-deep-navy text-xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Phone</h3>
+            <a href="tel:+211927855574" class="text-text-medium hover:text-gold-accent transition-colors font-medium">+211 927 855 574</a>
+          </div>
+          <!-- WhatsApp -->
+          <div class="bg-soft-warm p-6 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-14 h-14 bg-gradient-to-br from-green-600 to-green-400 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fab fa-whatsapp text-white text-xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">WhatsApp</h3>
+            <a href="https://wa.me/211917736258" target="_blank" rel="noopener noreferrer" class="text-text-medium hover:text-gold-accent transition-colors font-medium">+211 917 736 258</a>
+          </div>
+          <!-- Email -->
+          <div class="bg-soft-warm p-6 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-14 h-14 bg-gradient-to-br from-teal-rich to-sage-muted rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-envelope text-white text-xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Email</h3>
+            <a href="mailto:gsmcdaagency@gmail.com" class="text-text-medium hover:text-gold-accent transition-colors font-medium">gsmcdaagency@gmail.com</a>
+          </div>
+        </div>
+        <!-- Organization Details -->
+        <div class="mt-10 bg-soft-warm rounded-2xl p-6 text-center max-w-3xl mx-auto fade-in-element">
+          <div class="grid sm:grid-cols-2 gap-4 text-sm">
+            <div>
+              <p class="text-text-medium">Organization</p>
+              <p class="font-semibold text-deep-navy">God Speaking to the Mankind's Church and Development Agency</p>
+            </div>
+            <div>
+              <p class="text-text-medium">Acronym</p>
+              <p class="font-semibold text-deep-navy">GSM-CDA</p>
+            </div>
+            <div>
+              <p class="text-text-medium">Organization Type</p>
+              <p class="font-semibold text-deep-navy">National Non-Governmental Organization (NGO)</p>
+            </div>
+            <div>
+              <p class="text-text-medium">Registered</p>
+              <p class="font-semibold text-deep-navy">30 January 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Contact Form -->
+    <section class="py-16 lg:py-20 bg-soft-warm" id="contact-form">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-in-element">
+          <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Send a Message</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Get in Touch</h2>
+        </div>
+        <form class="bg-white p-8 rounded-2xl shadow-md space-y-5 fade-in-element">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Full Name" required>
+            <input type="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Email Address" required>
+          </div>
+          <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Phone Number">
+          <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Organization (Optional)">
+          <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent">
+            <option value="" disabled selected>Subject</option>
+            <option>Partnership</option>
+            <option>Volunteering</option>
+            <option>Donations</option>
+            <option>Media & Press</option>
+            <option>General Inquiry</option>
+            <option>Community Support</option>
+          </select>
+          <textarea rows="5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Your message..." required></textarea>
+          <button type="submit" class="btn-gold w-full py-4 rounded-xl font-heading font-semibold shadow-xl">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 4. How Can We Help? -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="fade-in-element mb-12">
+          <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Inquiry Types</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">How Can We Help?</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+          <div class="bg-soft-warm p-5 rounded-xl shadow-sm card-hover fade-in-element flex flex-col items-center text-center">
+            <i class="fas fa-handshake text-deep-navy text-2xl mb-3"></i>
+            <h3 class="font-heading font-semibold text-deep-navy mb-1">Partnership</h3>
+            <p class="text-text-medium text-xs">Collaborate on humanitarian and development initiatives.</p>
+          </div>
+          <div class="bg-soft-warm p-5 rounded-xl shadow-sm card-hover fade-in-element flex flex-col items-center text-center">
+            <i class="fas fa-hands-helping text-gold-accent text-2xl mb-3"></i>
+            <h3 class="font-heading font-semibold text-deep-navy mb-1">Volunteer</h3>
+            <p class="text-text-medium text-xs">Join our network of dedicated volunteers.</p>
+          </div>
+          <div class="bg-soft-warm p-5 rounded-xl shadow-sm card-hover fade-in-element flex flex-col items-center text-center">
+            <i class="fas fa-gift text-teal-rich text-2xl mb-3"></i>
+            <h3 class="font-heading font-semibold text-deep-navy mb-1">Donations</h3>
+            <p class="text-text-medium text-xs">Support our programs and projects financially.</p>
+          </div>
+          <div class="bg-soft-warm p-5 rounded-xl shadow-sm card-hover fade-in-element flex flex-col items-center text-center">
+            <i class="fas fa-newspaper text-burnt-sienna text-2xl mb-3"></i>
+            <h3 class="font-heading font-semibold text-deep-navy mb-1">Media & Press</h3>
+            <p class="text-text-medium text-xs">Request interviews or information.</p>
+          </div>
+          <div class="bg-soft-warm p-5 rounded-xl shadow-sm card-hover fade-in-element flex flex-col items-center text-center">
+            <i class="fas fa-question-circle text-indigo-600 text-2xl mb-3"></i>
+            <h3 class="font-heading font-semibold text-deep-navy mb-1">General Inquiry</h3>
+            <p class="text-text-medium text-xs">Ask questions about our work.</p>
+          </div>
+          <div class="bg-soft-warm p-5 rounded-xl shadow-sm card-hover fade-in-element flex flex-col items-center text-center">
+            <i class="fas fa-users text-emerald-600 text-2xl mb-3"></i>
+            <h3 class="font-heading font-semibold text-deep-navy mb-1">Community Support</h3>
+            <p class="text-text-medium text-xs">Reach out about humanitarian activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Office Location (Map) -->
+    <section class="py-16 lg:py-20 bg-soft-warm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-in-element">
+          <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Find Us</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Office Location</h2>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-md overflow-hidden fade-in-element">
+          <!-- Placeholder map – replace with actual Google Maps embed -->
+          <div class="h-80 bg-gray-200 flex items-center justify-center">
+            <i class="fas fa-map-marked-alt text-gold-accent text-5xl"></i>
+            <p class="ml-4 text-text-medium">Juba, Central Equatoria, Republic of South Sudan</p>
+          </div>
+          <div class="p-6 text-center">
+            <p class="font-heading font-semibold text-deep-navy text-lg">Headquarters</p>
+            <p class="text-text-medium">Juba, Central Equatoria, Republic of South Sudan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Response Time -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-element">
+        <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Response Time</span>
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy mb-6">We're Here for You</h2>
+        <p class="text-text-medium text-lg leading-relaxed">
+          Our team aims to respond to inquiries as promptly as possible. Thank you for your patience and for reaching out to GSM‑CDA.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. Frequently Asked Questions -->
+    <section class="py-16 lg:py-20 bg-soft-warm">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in-element">
+          <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">FAQ</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Frequently Asked Questions</h2>
+        </div>
+        <div class="space-y-4">
+          <details class="bg-white rounded-xl shadow-sm p-5 card-hover fade-in-element">
+            <summary class="font-heading font-semibold text-deep-navy cursor-pointer list-none">How can I become a volunteer?</summary>
+            <p class="mt-3 text-text-medium text-sm leading-relaxed">Send an email to gsmcdaagency@gmail.com with your skills and availability. You can also use the contact form on this page and we'll guide you through the process.</p>
+          </details>
+          <details class="bg-white rounded-xl shadow-sm p-5 card-hover fade-in-element">
+            <summary class="font-heading font-semibold text-deep-navy cursor-pointer list-none">How can my organization partner with GSM‑CDA?</summary>
+            <p class="mt-3 text-text-medium text-sm leading-relaxed">We welcome churches, NGOs, government bodies, UN agencies, and businesses. Reach out via email or the partnership inquiry option in the contact form.</p>
+          </details>
+          <details class="bg-white rounded-xl shadow-sm p-5 card-hover fade-in-element">
+            <summary class="font-heading font-semibold text-deep-navy cursor-pointer list-none">How do I make a donation?</summary>
+            <p class="mt-3 text-text-medium text-sm leading-relaxed">Visit our <a href="get-involved.html#donate" class="text-gold-accent underline">Get Involved page</a> to see donation options. For larger gifts or in‑kind donations, please contact us directly.</p>
+          </details>
+          <details class="bg-white rounded-xl shadow-sm p-5 card-hover fade-in-element">
+            <summary class="font-heading font-semibold text-deep-navy cursor-pointer list-none">Where does GSM‑CDA operate?</summary>
+            <p class="mt-3 text-text-medium text-sm leading-relaxed">Our head office is in Juba, Republic of South Sudan. Current field projects are in Unity State (Bentiu and surrounding areas).</p>
+          </details>
+          <details class="bg-white rounded-xl shadow-sm p-5 card-hover fade-in-element">
+            <summary class="font-heading font-semibold text-deep-navy cursor-pointer list-none">How can I contact your team?</summary>
+            <p class="mt-3 text-text-medium text-sm leading-relaxed">Use the contact form, email us at gsmcdaagency@gmail.com, call +211 927 855 574, or message us on WhatsApp at +211 917 736 258.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Connect With Us (Social Media) -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="fade-in-element mb-12">
+          <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Stay Connected</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Connect With Us</h2>
+        </div>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=61592037711488" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-deep-navy rounded-full flex items-center justify-center hover:bg-gold-accent transition-all duration-300 shadow-lg" aria-label="Facebook">
+            <i class="fab fa-facebook-f text-white text-xl"></i>
+          </a>
+          <!-- Only Facebook is confirmed. Other icons can be added when accounts exist. -->
+        </div>
+        <p class="text-text-medium mt-4 text-sm">Follow us on Facebook for the latest updates.</p>
+      </div>
+    </section>
+
+    <!-- 9. Final Call to Action -->
+    <section class="py-20 lg:py-28 bg-gradient-to-r from-deep-navy via-navy to-teal-rich text-white">
+      <div class="max-w-4xl mx-auto text-center px-4 fade-in-element">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6">Let's Build Hope Together</h2>
+        <p class="text-lg opacity-95 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Every conversation creates an opportunity to serve communities, restore hope, and build a stronger future for South Sudan. Reach out today—we'd be honored to connect with you.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
+          <a href="#contact-form" class="bg-white text-deep-navy font-heading font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 inline-block">Send a Message</a>
+          <a href="get-involved.html#donate" class="btn-gold px-8 py-4 rounded-full font-heading font-semibold shadow-2xl inline-block">Donate Now</a>
+          <a href="get-involved.html#partner" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Partner With Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-deep-navy text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="logo-container">
+              <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image">
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-xl">GSM-CDA</h3>
+              <p class="text-sm opacity-80">God Speaking to the Mankind's Church and Development Agency</p>
+            </div>
+          </div>
+          <p class="opacity-85 mb-4 max-w-md leading-relaxed">A national, non-profit, non-governmental humanitarian and development organization registered on 30 January 2024 in Juba, Republic of South Sudan. Serving humanity, restoring hope, transforming lives.</p>
+          <div class="flex space-x-3">
+            <a href="https://www.facebook.com/profile.php?id=61592037711488" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold-accent transition-all duration-300" aria-label="Facebook">
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4 text-gold-accent">Quick Links</h4>
+          <ul class="space-y-2 opacity-90">
+            <li><a href="about.html" class="hover:text-gold-accent transition-colors">About Us</a></li>
+            <li><a href="programs.html" class="hover:text-gold-accent transition-colors">Programs</a></li>
+            <li><a href="projects.html" class="hover:text-gold-accent transition-colors">Projects</a></li>
+            <li><a href="news.html" class="hover:text-gold-accent transition-colors">News</a></li>
+            <li><a href="get-involved.html" class="hover:text-gold-accent transition-colors">Get Involved</a></li>
+            <li><a href="contact.html" class="hover:text-gold-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4 text-gold-accent">Contact</h4>
+          <ul class="space-y-3 opacity-90 text-sm">
+            <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-accent"></i>Juba, Central Equatoria<br>Republic of South Sudan</li>
+            <li class="flex items-start"><i class="fas fa-phone-alt mt-1 mr-3 text-gold-accent"></i><a href="tel:+211927855574" class="hover:text-gold-accent transition-colors">+211 927 855 574</a></li>
+            <li class="flex items-start"><i class="fab fa-whatsapp mt-1 mr-3 text-gold-accent"></i><a href="https://wa.me/211917736258" target="_blank" rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">+211 917 736 258</a></li>
+            <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-3 text-gold-accent"></i><a href="mailto:gsmcdaagency@gmail.com" class="hover:text-gold-accent transition-colors">gsmcdaagency@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-75">
+        <p>&copy; 2026 GSM-CDA. All rights reserved. Registered National Non-Governmental Organization (NGO) in the Republic of South Sudan — Registration Date: 30 January 2024.</p>
+        <div class="flex space-x-6 mt-3 md:mt-0">
+          <a href="#" class="hover:text-gold-accent transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gold-accent transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Scripts -->
+  <script src="script.js" defer></script>
+
+  <!-- Smooth scroll for anchor links -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === "#" || href === "") return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
