@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GSM-CDA Projects – Current field initiatives supporting IDP communities, clean water access, and livestock protection in Bentiu, Unity State, South Sudan." />
+  <meta name="keywords" content="GSM-CDA, South Sudan, projects, Bentiu, IDP support, clean water, WASH, petroleum pollution, livestock protection, Unity State" />
+  <meta name="author" content="GSM-CDA" />
+  <meta property="og:title" content="Projects | GSM-CDA" />
+  <meta property="og:description" content="Delivering practical humanitarian, environmental, and community development projects that improve lives and strengthen resilience in South Sudan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gsmcda-ss.org/projects" />
+  <title>Projects | GSM-CDA</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-navy': '#0B1D2E',
+            'navy': '#123E5E',
+            'teal-rich': '#1A6B5A',
+            'gold-accent': '#C6973A',
+            'gold-light': '#D4AF6C',
+            'cream-warm': '#FBF9F4',
+            'soft-warm': '#F0EDE6',
+            'text-dark': '#1C1C1C',
+            'text-medium': '#4A4A4A',
+            'burnt-sienna': '#C67B5C',
+            'sage-muted': '#8B9D83',
+            'charcoal-rich': '#1E1E24',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            accent: ['Lora', 'Georgia', 'serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.7s ease-out forwards',
+            'slide-up': 'slideUp 0.8s ease-out forwards',
+            'slide-in-right': 'slideInRight 0.5s ease-out forwards',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+            slideUp: {
+              '0%': { opacity: 0, transform: 'translateY(40px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+            slideInRight: {
+              '0%': { opacity: 0, transform: 'translateX(40px)' },
+              '100%': { opacity: 1, transform: 'translateX(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-15px)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- Mobile Overlay -->
+  <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/60 z-40 md:hidden" onclick="closeMobileMenu()"></div>
+
+  <!-- Floating Action Buttons -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+    <a href="https://wa.me/211917736258" target="_blank" rel="noopener noreferrer" class="floating-btn bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="WhatsApp Support" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:+211927855574" class="bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Call Support" title="Call Us">
+      <i class="fas fa-phone-alt text-lg"></i>
+    </a>
+    <a href="mailto:gsmcdaagency@gmail.com" class="bg-deep-navy hover:bg-navy text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Email Us" title="Send Email">
+      <i class="fas fa-envelope text-lg"></i>
+    </a>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="fixed w-full z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-soft-warm/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-3 lg:py-4">
+        <div class="flex items-center space-x-3">
+          <div class="logo-container">
+            <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image">
+          </div>
+          <div>
+            <h1 class="font-heading font-bold text-lg lg:text-xl text-deep-navy leading-tight tracking-tight">GSM-CDA</h1>
+            <p class="text-[10px] lg:text-xs text-gold-accent font-medium tracking-wider uppercase">Serving Humanity • Restoring Hope</p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-0">
+          <a href="index.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Home</a>
+          <a href="about.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">About Us</a>
+          <a href="programs.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Programs</a>
+          <a href="projects.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Projects</a>
+          <a href="news.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">News</a>
+          <a href="get-involved.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Get Involved</a>
+          <a href="contact.html" class="nav-link px-3 xl:px-4 py-2 text-text-dark hover:text-gold-accent transition-colors font-medium text-sm xl:text-base">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden lg:block">
+          <a href="get-involved.html" class="btn-gold font-heading font-semibold px-6 py-3 rounded-full text-sm shadow-lg inline-block">
+            Donate Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-deep-navy p-2 focus:outline-none hover:text-gold-accent transition-colors" aria-label="Open menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-y-0 left-0 w-72 bg-white shadow-2xl z-50 flex flex-col">
+      <div class="flex justify-between items-center p-5 border-b border-soft-warm">
+        <div class="flex items-center space-x-2">
+          <div class="logo-container-mobile">
+            <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image-mobile">
+          </div>
+          <span class="font-heading font-bold text-lg text-deep-navy">GSM-CDA</span>
+        </div>
+        <button id="close-mobile-menu" class="text-text-dark hover:text-gold-accent transition-colors p-1" aria-label="Close menu">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-1 p-4 flex-1 overflow-y-auto">
+        <a href="index.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🏠 Home</a>
+        <a href="about.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📖 About Us</a>
+        <a href="programs.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🌱 Programs</a>
+        <a href="projects.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🎯 Projects</a>
+        <a href="news.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">📰 News</a>
+        <a href="get-involved.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">🤝 Get Involved</a>
+        <a href="contact.html" onclick="closeMobileMenu()" class="px-4 py-3 text-text-dark hover:bg-soft-warm rounded-lg font-medium transition-all hover:text-gold-accent">✉️ Contact</a>
+      </nav>
+      <div class="p-4 border-t border-soft-warm">
+        <a href="get-involved.html" onclick="closeMobileMenu()" class="btn-gold block w-full text-center px-6 py-3 rounded-full font-heading font-semibold shadow-lg">
+          Donate Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-16 lg:pt-20">
+
+    <!-- 1. Hero Banner -->
+    <section class="page-banner py-28 lg:py-36 text-center text-white px-4">
+      <div class="max-w-3xl mx-auto fade-in-element">
+        <span class="inline-block px-4 py-1.5 bg-white/15 backdrop-blur-sm rounded-full text-sm font-medium mb-5 tracking-wide uppercase">In Action</span>
+        <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 hero-text-shadow">Our Projects</h1>
+        <p class="text-lg opacity-95 hero-text-shadow">
+          Delivering practical humanitarian, environmental, and community development projects that improve lives and strengthen resilience across South Sudan.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Introduction -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-element">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy mb-6">On the Ground in Unity State</h2>
+        <p class="text-text-medium text-lg leading-relaxed max-w-3xl mx-auto">
+          GSM-CDA implements field projects that respond to urgent humanitarian needs while promoting sustainable development, environmental protection, public health, and community resilience. Our current initiatives focus on supporting vulnerable communities in <strong>Unity State</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. Featured Projects -->
+    <section class="py-16 lg:py-20 bg-soft-warm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in-element mb-16">
+          <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Current Initiatives</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Featured Projects</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1: IDP Support & Protection -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover fade-in-element">
+            <img src="assets/mankind3.jpeg" alt="IDP Camp Support - Bentiu" class="w-full h-52 object-cover" loading="lazy">
+            <div class="p-6">
+              <span class="px-3 py-1 bg-sky-50 text-teal-rich text-xs font-semibold rounded-full mb-3 inline-block">IDP Support & Protection</span>
+              <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Emergency Support for Displaced Families – UN/IDP Camp, Bentiu</h3>
+              <p class="text-text-medium text-sm mb-4">
+                Emergency support for displaced families inside the UN-managed IDP Camp in Bentiu through emergency food distributions, clean water, hygiene kits, health advocacy, environmental protection services, and advocacy for improved living conditions.
+              </p>
+              <div class="flex justify-between text-sm text-text-medium mb-2">
+                <span>Progress</span>
+                <span class="font-semibold text-teal-rich">65% (3,250/5,000 families)</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                <div class="bg-gradient-to-r from-teal-rich to-sky-500 h-2.5 rounded-full" style="width:65%"></div>
+              </div>
+              <p class="text-xs text-text-medium mt-2">📍 Bentiu IDP Camp, Unity State</p>
+            </div>
+          </div>
+
+          <!-- Project 2: Safe Water Awareness & Filtration Program -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover fade-in-element">
+            <img src="assets/mankind6.jpeg" alt="Clean Water Education - Bentiu" class="w-full h-52 object-cover" loading="lazy">
+            <div class="p-6">
+              <span class="px-3 py-1 bg-amber-50 text-gold-accent text-xs font-semibold rounded-full mb-3 inline-block">Education & WASH</span>
+              <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Safe Water Awareness & Filtration Program – Bentiu</h3>
+              <p class="text-text-medium text-sm mb-4">
+                Improving access to safe drinking water by distributing water filtration kits, conducting hygiene education, and training Community Health Champions to reduce waterborne diseases.
+              </p>
+              <p class="text-text-medium text-sm font-semibold text-teal-rich">Status: Active – Enrolling Community Health Champions Now</p>
+              <p class="text-xs text-text-medium mt-2">📍 Bentiu Town & Surrounding Payams, Unity State</p>
+            </div>
+          </div>
+
+          <!-- Project 3: Livestock & Water Source Protection -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover fade-in-element">
+            <img src="assets/mankind10.jpeg" alt="Livestock Protection - Bentiu Petroleum Pollution" class="w-full h-52 object-cover" loading="lazy">
+            <div class="p-6">
+              <span class="px-3 py-1 bg-sky-50 text-teal-rich text-xs font-semibold rounded-full mb-3 inline-block">Water & Sanitation</span>
+              <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Livestock & Water Source Protection – Bentiu Oil Fields</h3>
+              <p class="text-text-medium text-sm mb-4">
+                Protecting livestock and water sources from petroleum pollution by securing contaminated areas, creating alternative watering points, conducting soil and water testing, and promoting responsible environmental practices.
+              </p>
+              <div class="flex justify-between text-sm text-text-medium mb-2">
+                <span>Progress</span>
+                <span class="font-semibold text-teal-rich">75% (8/10 sites secured)</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+                <div class="bg-gradient-to-r from-teal-rich to-sage-muted h-2.5 rounded-full" style="width:75%"></div>
+              </div>
+              <p class="text-xs text-text-medium mt-2">📍 Oil-Affected Areas, Bentiu, Unity State</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Project Statistics -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in-element mb-12">
+          <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">By the Numbers</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Project Statistics</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div class="stat-card rounded-2xl p-8 text-center text-white card-hover fade-in-element">
+            <i class="fas fa-project-diagram text-gold-accent text-3xl mb-4"></i>
+            <div class="text-3xl font-bold text-gold-accent">3</div>
+            <p class="mt-2 text-sm opacity-90">Active Projects</p>
+          </div>
+          <div class="stat-card rounded-2xl p-8 text-center text-white card-hover fade-in-element">
+            <i class="fas fa-users text-gold-accent text-3xl mb-4"></i>
+            <div class="text-3xl font-bold text-gold-accent">3,250</div>
+            <p class="mt-2 text-sm opacity-90">Families Reached</p>
+          </div>
+          <div class="stat-card rounded-2xl p-8 text-center text-white card-hover fade-in-element">
+            <i class="fas fa-bullseye text-gold-accent text-3xl mb-4"></i>
+            <div class="text-3xl font-bold text-gold-accent">5,000</div>
+            <p class="mt-2 text-sm opacity-90">Target Beneficiaries</p>
+          </div>
+          <div class="stat-card rounded-2xl p-8 text-center text-white card-hover fade-in-element">
+            <i class="fas fa-map-marker-alt text-gold-accent text-3xl mb-4"></i>
+            <div class="text-3xl font-bold text-gold-accent">Unity State</div>
+            <p class="mt-2 text-sm opacity-90">Operations Area</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Areas of Impact -->
+    <section class="py-16 lg:py-20 bg-soft-warm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="fade-in-element mb-12">
+          <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">What We Achieve</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy mb-6">Areas of Impact</h2>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-life-ring text-deep-navy text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Humanitarian Assistance</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-tint text-teal-rich text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Clean Water & WASH</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-leaf text-gold-accent text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Environmental Protection</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-heartbeat text-burnt-sienna text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Public Health</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-shield-alt text-indigo-600 text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Community Resilience</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-cloud-sun text-sky-600 text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Climate Action</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-paw text-purple-600 text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Livestock Protection</span>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow-sm card-hover fade-in-element">
+            <i class="fas fa-chalkboard-teacher text-rose-500 text-2xl mb-3"></i>
+            <span class="font-medium text-deep-navy text-sm block">Community Education</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Project Locations -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in-element mb-12">
+          <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Where We Work</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy mb-6">Project Locations</h2>
+        </div>
+        <div class="max-w-4xl mx-auto fade-in-element">
+          <!-- Placeholder map – replace with an actual map image -->
+          <div class="bg-soft-warm rounded-2xl shadow-md overflow-hidden border border-soft-warm">
+            <img src="assets/map-placeholder.jpg" alt="Map of Unity State showing project locations" class="w-full h-auto object-cover" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'p-12 text-center text-text-medium\'><i class=\'fas fa-map-marked-alt text-gold-accent text-5xl mb-4\'></i><p class=\'text-lg font-medium\'>Bentiu IDP Camp, Bentiu Town & Surrounding Payams, Oil‑Affected Areas – Unity State, South Sudan</p></div>';">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Project Approach -->
+    <section class="py-16 lg:py-20 bg-soft-warm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in-element mb-16">
+          <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">How We Deliver</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Project Approach</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-deep-navy to-navy rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-clipboard-list text-white text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-deep-navy mb-3">1. Community Needs Assessment</h3>
+            <p class="text-text-medium text-sm">We listen to communities and identify their most urgent priorities.</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-gold-accent to-gold-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-pencil-ruler text-deep-navy text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-deep-navy mb-3">2. Planning & Coordination</h3>
+            <p class="text-text-medium text-sm">We design evidence-based interventions with community and partner input.</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-teal-rich to-sage-muted rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-cogs text-white text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-deep-navy mb-3">3. Project Implementation</h3>
+            <p class="text-text-medium text-sm">We execute with transparency, professionalism, and local leadership.</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-burnt-sienna to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-users text-white text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-deep-navy mb-3">4. Community Participation</h3>
+            <p class="text-text-medium text-sm">Communities are partners in decision-making and implementation.</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-chart-line text-white text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-deep-navy mb-3">5. Monitoring & Evaluation</h3>
+            <p class="text-text-medium text-sm">Continuous assessment ensures accountability and measurable impact.</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-md card-hover fade-in-element text-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-emerald-600 to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <i class="fas fa-seedling text-white text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-deep-navy mb-3">6. Sustainable Impact</h3>
+            <p class="text-text-medium text-sm">We build local capacity so that progress endures beyond the project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Project Gallery -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in-element mb-12">
+          <span class="inline-block px-4 py-1.5 bg-soft-warm text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Gallery</span>
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy mb-6">Project Gallery</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          <!-- Replace with actual project images when available -->
+          <div class="rounded-xl overflow-hidden shadow-sm card-hover fade-in-element"><img src="assets/mankind3.jpeg" alt="IDP assistance" class="w-full h-48 object-cover" loading="lazy"></div>
+          <div class="rounded-xl overflow-hidden shadow-sm card-hover fade-in-element"><img src="assets/mankind6.jpeg" alt="Water and hygiene activities" class="w-full h-48 object-cover" loading="lazy"></div>
+          <div class="rounded-xl overflow-hidden shadow-sm card-hover fade-in-element"><img src="assets/mankind10.jpeg" alt="Environmental protection" class="w-full h-48 object-cover" loading="lazy"></div>
+          <div class="rounded-xl overflow-hidden shadow-sm card-hover fade-in-element"><img src="assets/mankind2.jpeg" alt="Community meeting" class="w-full h-48 object-cover" loading="lazy"></div>
+          <div class="rounded-xl overflow-hidden shadow-sm card-hover fade-in-element"><img src="assets/mankind1.jpeg" alt="Livestock protection" class="w-full h-48 object-cover" loading="lazy"></div>
+          <div class="rounded-xl overflow-hidden shadow-sm card-hover fade-in-element"><img src="assets/child.jpeg" alt="Public health work" class="w-full h-48 object-cover" loading="lazy" onerror="this.style.display='none';"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Support Our Projects CTA -->
+    <section class="py-20 lg:py-28 bg-gradient-to-r from-deep-navy via-navy to-teal-rich text-white">
+      <div class="max-w-4xl mx-auto text-center px-4 fade-in-element">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6">Help Us Expand Our Impact</h2>
+        <p class="text-lg opacity-95 mb-10 max-w-2xl mx-auto leading-relaxed">Your support allows us to reach more families, protect more water sources, and build lasting resilience in South Sudan.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
+          <a href="get-involved.html#donate" class="btn-gold px-8 py-4 rounded-full font-heading font-semibold shadow-2xl inline-block">Donate Now</a>
+          <a href="get-involved.html#partner" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Partner With Us</a>
+          <a href="get-involved.html#volunteer" class="bg-white text-deep-navy font-heading font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 inline-block">Volunteer</a>
+          <a href="contact.html" class="bg-transparent border-2 border-white/80 text-white font-heading font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Contact Our Team</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-deep-navy text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="logo-container">
+              <img src="assets/manlogo.jpeg" alt="GSM-CDA Logo" class="logo-image">
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-xl">GSM-CDA</h3>
+              <p class="text-sm opacity-80">God Speaking to the Mankind's Church and Development Agency</p>
+            </div>
+          </div>
+          <p class="opacity-85 mb-4 max-w-md leading-relaxed">A national, non-profit, non-governmental humanitarian and development organization registered on 30 January 2024 in Juba, Republic of South Sudan. Serving humanity, restoring hope, transforming lives.</p>
+          <div class="flex space-x-3">
+            <a href="https://www.facebook.com/profile.php?id=61592037711488" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold-accent transition-all duration-300" aria-label="Facebook">
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4 text-gold-accent">Quick Links</h4>
+          <ul class="space-y-2 opacity-90">
+            <li><a href="about.html" class="hover:text-gold-accent transition-colors">About Us</a></li>
+            <li><a href="programs.html" class="hover:text-gold-accent transition-colors">Programs</a></li>
+            <li><a href="projects.html" class="hover:text-gold-accent transition-colors">Projects</a></li>
+            <li><a href="news.html" class="hover:text-gold-accent transition-colors">News</a></li>
+            <li><a href="get-involved.html" class="hover:text-gold-accent transition-colors">Get Involved</a></li>
+            <li><a href="contact.html" class="hover:text-gold-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4 text-gold-accent">Contact</h4>
+          <ul class="space-y-3 opacity-90 text-sm">
+            <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-accent"></i>Juba, Central Equatoria<br>Republic of South Sudan</li>
+            <li class="flex items-start"><i class="fas fa-phone-alt mt-1 mr-3 text-gold-accent"></i><a href="tel:+211927855574" class="hover:text-gold-accent transition-colors">+211 927 855 574</a></li>
+            <li class="flex items-start"><i class="fab fa-whatsapp mt-1 mr-3 text-gold-accent"></i><a href="https://wa.me/211917736258" target="_blank" rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">+211 917 736 258</a></li>
+            <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-3 text-gold-accent"></i><a href="mailto:gsmcdaagency@gmail.com" class="hover:text-gold-accent transition-colors">gsmcdaagency@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-75">
+        <p>&copy; 2026 GSM-CDA. All rights reserved. Registered National Non-Governmental Organization (NGO) in the Republic of South Sudan — Registration Date: 30 January 2024.</p>
+        <div class="flex space-x-6 mt-3 md:mt-0">
+          <a href="privacy.html" class="hover:text-gold-accent transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-gold-accent transition-colors">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
