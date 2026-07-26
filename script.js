@@ -1,3 +1,16 @@
+// Set active nav link based on current page (multi‑page support)
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+});
 // Mobile menu functionality
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileOverlay = document.getElementById('mobile-overlay');
