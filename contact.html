@@ -78,7 +78,7 @@
     <a href="tel:+211927855574" class="bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Call Support" title="Call Us">
       <i class="fas fa-phone-alt text-lg"></i>
     </a>
-    <a href="mailto:gsmcdaagency@gmail.com" class="bg-deep-navy hover:bg-navy text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Email Us" title="Send Email">
+    <a href="mailto:info@gsmcda-ss.org" class="bg-deep-navy hover:bg-navy text-white p-4 rounded-full shadow-xl flex items-center justify-center w-14 h-14 transition-all duration-300 hover:scale-110" aria-label="Email Us" title="Send Email">
       <i class="fas fa-envelope text-lg"></i>
     </a>
   </div>
@@ -204,7 +204,7 @@
               <i class="fas fa-envelope text-white text-xl"></i>
             </div>
             <h3 class="font-heading font-bold text-lg text-deep-navy mb-2">Email</h3>
-            <a href="mailto:gsmcdaagency@gmail.com" class="text-text-medium hover:text-gold-accent transition-colors font-medium">gsmcdaagency@gmail.com</a>
+            <a href="mailto:info@gsmcda-ss.org" class="text-text-medium hover:text-gold-accent transition-colors font-medium">info@gsmcda-ss.org</a>
           </div>
         </div>
         <!-- Organization Details -->
@@ -231,21 +231,26 @@
       </div>
     </section>
 
-    <!-- 3. Contact Form -->
+       <!-- 3. Contact Form (Netlify-enabled) -->
     <section class="py-16 lg:py-20 bg-soft-warm" id="contact-form">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 fade-in-element">
           <span class="inline-block px-4 py-1.5 bg-white text-teal-rich font-semibold rounded-full text-sm mb-4 tracking-wide uppercase">Send a Message</span>
           <h2 class="font-heading font-bold text-3xl md:text-4xl text-deep-navy">Get in Touch</h2>
         </div>
-        <form class="bg-white p-8 rounded-2xl shadow-md space-y-5 fade-in-element">
+
+        <!-- Netlify Form -->
+        <form name="contact" method="POST" data-netlify="true" class="bg-white p-8 rounded-2xl shadow-md space-y-5 fade-in-element">
+          <!-- Hidden fields for Netlify -->
+          <input type="hidden" name="form-name" value="contact">
+
           <div class="grid sm:grid-cols-2 gap-5">
-            <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Full Name" required>
-            <input type="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Email Address" required>
+            <input type="text" name="full-name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Full Name" required>
+            <input type="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Email Address" required>
           </div>
-          <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Phone Number">
-          <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Organization (Optional)">
-          <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent">
+          <input type="tel" name="phone" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Phone Number">
+          <input type="text" name="organization" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Organization (Optional)">
+          <select name="subject" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent">
             <option value="" disabled selected>Subject</option>
             <option>Partnership</option>
             <option>Volunteering</option>
@@ -254,7 +259,7 @@
             <option>General Inquiry</option>
             <option>Community Support</option>
           </select>
-          <textarea rows="5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Your message..." required></textarea>
+          <textarea name="message" rows="5" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gold-accent focus:border-transparent" placeholder="Your message..." required></textarea>
           <button type="submit" class="btn-gold w-full py-4 rounded-xl font-heading font-semibold shadow-xl">Send Message</button>
         </form>
       </div>
@@ -438,15 +443,15 @@
             <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-accent"></i>Juba, Central Equatoria<br>Republic of South Sudan</li>
             <li class="flex items-start"><i class="fas fa-phone-alt mt-1 mr-3 text-gold-accent"></i><a href="tel:+211927855574" class="hover:text-gold-accent transition-colors">+211 927 855 574</a></li>
             <li class="flex items-start"><i class="fab fa-whatsapp mt-1 mr-3 text-gold-accent"></i><a href="https://wa.me/211917736258" target="_blank" rel="noopener noreferrer" class="hover:text-gold-accent transition-colors">+211 917 736 258</a></li>
-            <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-3 text-gold-accent"></i><a href="mailto:gsmcdaagency@gmail.com" class="hover:text-gold-accent transition-colors">gsmcdaagency@gmail.com</a></li>
+            <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-3 text-gold-accent"></i><a href="mailto:info@gsmcda-ss.org" class="hover:text-gold-accent transition-colors">info@gsmcda-ss.org</a></li>
           </ul>
         </div>
       </div>
       <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-75">
         <p>&copy; 2026 GSM-CDA. All rights reserved. Registered National Non-Governmental Organization (NGO) in the Republic of South Sudan — Registration Date: 30 January 2024.</p>
         <div class="flex space-x-6 mt-3 md:mt-0">
-          <a href="#" class="hover:text-gold-accent transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-gold-accent transition-colors">Terms of Use</a>
+          <a href="privacy.html" class="hover:text-gold-accent transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-gold-accent transition-colors">Terms of Use</a>
         </div>
       </div>
     </div>
